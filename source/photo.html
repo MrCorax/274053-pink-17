@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
 
@@ -33,7 +35,9 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Pink - доказательство твоего мастерства</h1>
-      <h2 class="page-main__title">Фотографии пользователей</h2>
+      <div class="page-main__background">
+        <h2 class="page-main__title">Фотографии пользователей</h2>
+      </div>
 
       <section class="messages">
         <p class="messages__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -42,7 +46,7 @@
 
           <div class="messages__item">
             <span class="messages__picture-figcaption">Панорама дня</span>
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Панорамная фотография Анны - мост над рекой">
+            <img class="messages__author-picture" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамная фотография Анны - мост над рекой">
             <p class="messages__text"><b>Анна</b>
             <time class="messages__post-time">(5 минут назад)</time><br>
             Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! <br>
@@ -50,7 +54,7 @@
           </div>
 
           <div class="messages__item">
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Фотография Левона - автомобиль">
+            <img class="messages__author-picture" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона - автомобиль">
             <p class="messages__text"><b>Левон</b>
             <time class="messages__post-time">(5 часов назад)</time><br>
             Вчера он на луну летал, сегодня в руки к нам попал.<br>
@@ -58,7 +62,7 @@
           </div>
 
           <div class="messages__item">
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Фотография Антона - барабанная установка">
+            <img class="messages__author-picture" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона - барабанная установка">
             <p class="messages__text"><b>Антон</b>
             <time class="messages__post-time">(12 часов назад)</time><br>
             Соседи будут рады!<br>
@@ -66,7 +70,7 @@
           </div>
 
           <div class="messages__item">
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Фотография Бориса - стеклянный потолок в холле бизнес центра">
+            <img class="messages__author-picture" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса - стеклянный потолок в холле бизнес центра">
             <p class="messages__text"><b>Борис</b>
             <time class="messages__post-time">(20 часов назад)</time><br>
             Здесь могла быть ваша цитата о высоком и вечном.<br>
@@ -74,7 +78,7 @@
           </div>
 
           <div class="messages__item">
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Фотография Сергея - рынок на Кубани">
+            <img class="messages__author-picture" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея - рынок на Кубани">
             <p class="messages__text"><b>Сергей</b>
             <time class="messages__post-time">(25 часов назад)</time><br>
             Самая кубанская в мире!<br>
@@ -82,7 +86,7 @@
           </div>
 
           <div class="messages__item">
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Фотография Максима - где-то в горах">
+            <img class="messages__author-picture" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима - где-то в горах">
             <p class="messages__text"><b>Максим</b>
             <time class="messages__post-time">(40 часов назад)</time><br>
             Где снег-то?<br>
@@ -90,7 +94,7 @@
           </div>
 
           <div class="messages__item">
-            <img class="messages__author-picture" src="http://placehold.it/150x100" alt="Фотография Надежды  - закат из самолета">
+            <img class="messages__author-picture" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды  - закат из самолета">
             <p class="messages__text"><b>Надежда</b>
             <time class="messages__post-time">(45 часов назад)</time><br>
             Всем GM и взаимные лайки!<br>
@@ -105,7 +109,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <img src="http://placehold.it/150x100" alt="PINK logo">
+          <img src="../img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK logo">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -121,8 +125,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <p class="copyright__text">Разработано:
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </p>
         </div>
       </div>
     </footer>
