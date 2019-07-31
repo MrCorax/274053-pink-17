@@ -8,12 +8,13 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="PINK logo">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" >Открыть меню</button>
+
         <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img src="../img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="PINK logo">
+          </a>
+          <button class="main-nav__toggle" type="button" >Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a>Главная</a>
@@ -34,37 +35,40 @@
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">Pink - лекарство от уныния!</h1>
+      <!-- <h1 class="visually-hidden">Pink - лекарство от уныния!</h1> временно-->
+      <div class="page-main__container">
+        <div class="page-main__background">
+          <div class="page-main__background-object">
+          </div>
 
-      <div class="page-main__background">
-        <div class="page-main__background-object">
+          <section class="download-block">
+            <div class="download-block__wrapper">
+              <a class="download-block__download button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+              <div class="download-block__markets markets">
+                <ul class="markets__list">
+                  <li class="markets__item">
+                    <a class="markets__link markets__link--itunes" href="https://www.apple.com/ru/itunes/">iTunes</a>
+                  </li>
+                  <li class="markets__item">
+                    <a class="markets__link markets__link--play"  href="https://play.google.com">Google Play</a>
+                  </li>
+                  <li class="markets__item">
+                    <a class="markets__link markets__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows Phone — Microsoft Store</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="download-block__promo">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </section>
+
         </div>
       </div>
 
-      <section class="download-block">
-        <div class="download-block__wrapper">
-          <a class="download-block__download button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-          <div class="download-block__markets markets">
-            <ul class="markets__list">
-              <li class="markets__item">
-                <a class="markets__link markets__link--itunes" href="https://www.apple.com/ru/itunes/">iTunes</a>
-              </li>
-              <li class="markets__item">
-                <a class="markets__link markets__link--play"  href="https://play.google.com">Google Play</a>
-              </li>
-              <li class="markets__item">
-                <a class="markets__link markets__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows Phone — Microsoft Store</a>
-              </li>
-            </ul>
-          </div>
-          <p class="download-block__promo">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
+      <p class="page-main__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
 
       <section class="advantages">
         <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества Pink</h2>
-          <p class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <!-- <h2 class="visually-hidden">Преимущества Pink</h2> временно -->
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -80,7 +84,7 @@
             </li>
           </ul>
 
-          <img src="../img/iphone-screen-mobile@1x.png" alt="фото обработанное приложением">
+          <img class="advantages__image-example" width="157" height="320" src="../img/iphone-screen-mobile@1x.png" alt="фото обработанное приложением">
 
         </div>
       </section>

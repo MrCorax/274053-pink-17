@@ -1,3 +1,15 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+// .page-main__container {
+//   width: 320px;
+//
+// }
+
 .page-main__background {
   min-height: 462px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
@@ -16,4 +28,31 @@
   font-size: 24px;
   font-weight: normal;
   color: #ffffff;
+}
+
+.page-main__promo {
+  font-size: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: auto;
+    margin: 0;
+  }
+
+  .page-main__container {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .page-main__background {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__container {
+    width: 960px;
+  }
 }

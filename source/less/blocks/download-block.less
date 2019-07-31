@@ -1,4 +1,21 @@
 .download-block {
+  width: 320px;
+  margin: 0 auto;
   background-color: #1d2631;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .download-block {
+    order: 0;
+    width: 340px;
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .download-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+  }
 }
