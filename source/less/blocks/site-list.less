@@ -1,13 +1,27 @@
-.site-list {
+.site-list__item {
+  display: block;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #485461;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
 
   color: #ffffff;
 
-  // временно для сетки
-  min-height: 325px;
-}
-
-.site-list__item {
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    border: none;
+    text-transform: none;
+  }
 }
