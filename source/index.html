@@ -10,34 +10,35 @@
 
     <header class="page-header">
       <nav class="main-nav">
-
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <img class="main-nav__image" src="../img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="PINK logo">
-          </a>
-          <button class="main-nav__toggle" type="button" >Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item--active">
-              <a class="site-list__item" >Главная</a>
-            </li>
-            <li>
-              <a class="site-list__item" href="photo.html">Фотографии</a>
-            </li>
-            <li>
-              <a class="site-list__item" href="form.html">Конкурс</a>
-            </li>
-            <li>
-              <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <!-- <div class="container"> -->
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo">
+              <img class="main-nav__image" src="../img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="PINK logo">
+            </a>
+            <button class="main-nav__toggle" type="button" >Открыть меню</button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item--active">
+                <a class="site-list__item" >Главная</a>
+              </li>
+              <li>
+                <a class="site-list__item" href="photo.html">Фотографии</a>
+              </li>
+              <li>
+                <a class="site-list__item" href="form.html">Конкурс</a>
+              </li>
+              <li>
+                <a class="site-list__item" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        <!-- </div> -->
       </nav>
     </header>
 
     <main class="page-main">
 
       <!-- <h1 class="visually-hidden">Pink - лекарство от уныния!</h1> временно-->
-      <div class="page-main__container">
+      <div class="page-main__wrapper">
         <div class="page-main__background">
           <div class="page-main__background-object">
           </div>
@@ -66,13 +67,13 @@
       </div>
 
       <!-- временно -->
-      <div class="page-main__test">
+      <div class="page-main__test container">
         <p class="page-main__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
       </div>
       <!-- временно -->
 
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="advantages__wrapper container">
           <!-- <h2 class="visually-hidden">Преимущества Pink</h2> временно -->
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -89,7 +90,9 @@
             </li>
           </ul>
 
-          <img class="advantages__image-example" width="157" height="320" src="../img/iphone-screen-mobile@1x.png" alt="фото обработанное приложением">
+          <p class="advantages__image-example">
+            <img width="157" height="320" src="../img/iphone-screen-mobile@1x.png" alt="фото обработанное приложением">
+          </p>
 
         </div>
       </section>

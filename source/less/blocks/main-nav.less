@@ -1,6 +1,4 @@
 .main-nav {
-  width: 320px;
-  margin: 0 auto;
   background-color: #283645;
 }
 
@@ -29,16 +27,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav {
-    width: auto;
-    margin: 0;
-  }
-
-  .main-nav__wrapper {
-    width: 660px;
-    margin: 0 auto;
-  }
-
   .main-nav__image {
     padding-top: 44px;
     padding-bottom: 42px;
@@ -50,13 +38,7 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 940px;
-  }
-
-  .main-nav__list {
-    display: flex;
-    width: 620px;
-    justify-content: space-between;
+    padding: 0 10px;
   }
 
   .main-nav__logo {
@@ -65,8 +47,14 @@
   }
 
   .main-nav__image {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 72px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
   }
 }

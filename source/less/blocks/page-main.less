@@ -1,12 +1,9 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .page-main__background {
-  min-height: 462px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -14,9 +11,10 @@
 }
 
 .page-main__background-object {
-  min-height: 314px;
+  min-height: 462px;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .page-main__title {
@@ -30,28 +28,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main {
-    width: auto;
-  }
-
-  .page-main__container {
-    width: 660px;
-    margin: 0 auto;
-  }
-
-  // .page-main__background {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  .page-main__test {
-    width: 660px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-main__container {
-    width: 960px;
+  .page-main__background {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
