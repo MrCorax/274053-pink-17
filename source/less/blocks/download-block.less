@@ -2,3 +2,22 @@
   background-color: #1d2631;
   color: #ffffff;
 }
+
+@media (min-width: @tablet-width) {
+  .download-block {
+    width: 300px;
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .download-block__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-block__wrapper {
+    padding-left: 10px;
+  }
+}

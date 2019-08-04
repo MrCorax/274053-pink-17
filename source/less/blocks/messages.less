@@ -1,5 +1,9 @@
 .messages__description {
+  padding-top: 49px;
+  padding-bottom: 52px;
+
   line-height: 30px;
+  text-align: center;
 }
 
 .messages__list {
@@ -18,4 +22,44 @@
 .messages__like {
   text-transform: uppercase;
   color: #d22856;
+}
+
+.messages__panoramic-image {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .messages__description {
+    width: 500px;
+    padding-top: 99px;
+    padding-bottom: 79px;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .messages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .messages__item {
+    width: 300px;
+  }
+
+  .messages__panoramic-image {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .messages__description {
+    width: 650px;
+    padding-bottom: 91px;
+  }
+
+  .messages__panoramic-image {
+    width: @desktop-width;
+  }
 }
